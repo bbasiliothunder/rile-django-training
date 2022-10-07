@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "rile-django-training"
+version = "0.1.0"
+description = "RIle's Django App"
+authors = ["Jino Basilio <sonnysinzanity@gmail.com>"]
+readme = "README.md"
+packages = [{include = "rile_django_training"}, {include = "django_beginner", from = "django_beginner" }, {include = "member", from = "django_beginner" }]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Django = "^4.1.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
