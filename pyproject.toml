@@ -4,11 +4,13 @@ version = "0.1.0"
 description = "RIle's Django App"
 authors = ["Jino Basilio <sonnysinzanity@gmail.com>"]
 readme = "README.md"
-packages = [{include = "rile_django_training"}, {include = "django_beginner", from = "django_beginner" }, {include = "member", from = "django_beginner" }]
+packages = [{include = "rile_django_training"}, {include = "django_beginner", from = "django_beginner" }, {include = "member", from = "django_beginner" }, {include = "utils", from = "django_beginner" }]
 
 [tool.poetry.dependencies]
 python = "^3.8"
 Django = "^4.1.2"
+pylint = "^2.15.4"
+pytest = "^7.1.3"
 
 
 [build-system]
